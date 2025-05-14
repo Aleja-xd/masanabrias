@@ -7,6 +7,7 @@ import { PaisDetailComponent } from './pais-detail/pais-detail.component';
   imports: [
     CommonModule
   ],
-  declarations: [ PaisListComponent,PaisDetailComponent]
+  declarations: [ PaisListComponent,PaisDetailComponent],
+  exports: [ PaisListComponent],
 })
 export class PaisModule { }
