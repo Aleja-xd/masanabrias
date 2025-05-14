@@ -6,6 +6,6 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PaisService {
 
-constructor() { }
+constructor(private http: HttpClient) { }
 
 }

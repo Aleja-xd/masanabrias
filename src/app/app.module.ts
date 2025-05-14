@@ -13,8 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PaisModule,
-    HttpClientModule
+    HttpClientModule,
+    PaisModule
   ],
   providers: [],
   bootstrap: [AppComponent]
