@@ -1,3 +1,8 @@
-<p>
-  pais-list works!
-</p>
+<div *ngFor="let pais of paises">
+  <h3>{{ pais.name }}</h3>
+  <p>Capital: {{ pais.capital }}</p>
+  <p>Región: {{ pais.region }}</p>
+  <p>Población: {{ pais.population | number }}</p>
+  <img [src]="pais.flag" alt="{{ pais.name }}" width="100">
+</div>
+
