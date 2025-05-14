@@ -3,16 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PaisListComponent } from './pais-list/pais-list.component';
+import { PaisModule } from './pais/pais.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [	
-    AppComponent,
-      PaisListComponent
-   ],
+  declarations: [
+    AppComponent
+  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PaisModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
